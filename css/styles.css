@@ -1,0 +1,755 @@
+:root{
+    --color-green: #38AF90;
+    --color-white: #fff;
+    --color-light-gray:#F0F0F0; 
+    --color-medium-gray:#797979;
+    --color-button:#DD7E92;
+    --color-font:#c4c4c4;
+    --color-radio:#999999;
+    --color-footer:#383838;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+a, a:hover {
+    text-decoration: none;
+    color: unset;    
+  }
+
+header{
+    background-color: var(--color-green);    
+    height: 90px;
+    display: flex; 
+    margin: 0 10px 0 10px;
+}
+
+.nave {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.nave h1{
+    color: var(--color-white);
+    font-size: 18px;
+    margin-left: 105px;   
+}
+
+.nav-list{
+    display: flex;    
+    margin-right: 105px;
+}
+
+.list-tag{
+    display: flex;
+    align-items: center;
+    padding: 0 29px 0 0;
+    list-style: none;
+}
+
+.nave img{
+    height: 62px;
+    width: 62px;
+    display: flex;   
+}
+
+
+
+.list-tag li{
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 29px;    
+}
+
+/*.news{
+    display: flex;
+}*/
+
+#news h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 0 0;
+}
+.news-text{
+   
+    background-color: var(--color-light-gray);
+    margin: 40px 105px;
+    border: 40px 105px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+        
+}
+
+.news-text h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-green);
+    display: flex;
+    margin: 0;
+    padding: 16px 0 0 40px;
+}
+
+.text-one{
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-medium-gray);
+    margin: 0;
+    padding: 0 43px 0 40px;
+    flex-wrap: wrap;
+}
+
+.line-decoratrion{
+    border-top: 1px solid var(--color-green);
+    margin: 1px 40px;
+
+}
+
+.news-date{
+   font-weight: 400; 
+   font-size: 0.625rem;
+   margin: 0;
+   padding-left: 40px;
+   color: var(--color-green);
+   
+}
+
+.text-two {
+    font-weight: 400;
+    font-size: 0.625rem;
+    color: var(--color-medium-gray);
+    margin: 0;
+    padding: 16px 41px 0 40px;
+    flex-wrap: wrap;
+}
+
+.text-article {
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 7px 0 15px 40px;
+    color: var(--color-button);
+    flex-wrap: wrap;
+}
+
+.text-Three {
+    font-weight: 400;
+    font-size: 0.625rem;
+    color: var(--color-medium-gray);
+    margin: 0;
+    padding: 0 41px 15px 40px;
+}
+
+.news-button {
+    width: 244px;
+    height: 67px;
+    border-radius: 8px;
+    border: transparent;
+    background-color: var(--color-button);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--color-white);
+   font-weight: 700;
+   font-size: 1.125rem;
+}
+
+.new-position-button {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game_imagem{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game_imagem{
+    margin: 56px 10px 0 10px;  
+    height: calc(100% - 559px);
+    background-color: var(--color-light-gray);
+    max-height: 1283px;    
+}
+
+#game_imagem h2{ 
+    margin: 0;
+    font-weight: 700;   
+    font-size: 2.25rem;
+    color: var(--color-green);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 36px 0 0 0;
+}
+
+.game_imagem_selection{
+    justify-content: center;
+    display: flex; 
+    flex-wrap: wrap; /*quebra de linha para a largura */     
+   
+}
+
+.game_imagem_frame{
+    width: 300px;
+    height: 326px;
+    background-color: var(--color-white);
+    margin: 73px 15px 70px 15px;
+    border-radius: 8px;
+    cursor: pointer; /* a seta do mouse passa para mao */
+
+}
+
+.game_imagem_frame img{
+    width: 300;
+    height: 168.54px;
+    border-radius: 8px;   
+
+}
+
+.game_imagem_frame h3{
+    font-weight: 700;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-medium-gray);
+    margin: 27.46px 0 0 0;
+}
+
+.font-color{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 0;
+}
+
+.game_imagem_frame p {       
+    color: var(--color-medium-gray);
+    font-weight: 400;
+    font-size: 0.75rem; 
+    margin: 0;      
+}
+
+.game_imagem_frame p strong{
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: var(--color-green);      
+    margin: 0;       
+}
+
+.number-rating p{
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: var(--color-green);
+    display: flex;
+    justify-content: center;
+}
+
+#enrollment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#enrollment h2{
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    margin: 39px 0 0 0;
+}
+
+.enrollment_box{  
+    margin: 40px 205px 61px 205px;
+   width: calc(100% -205px);
+    height: calc(100% -522px);
+    max-height: 1283px; 
+    max-width: 790px;
+    background-color: var(--color-light-gray);
+    border-radius: 8px;    
+}
+
+.enrollment_input1 input{
+    height: 50px;
+    width: 642px;
+    margin: 52px 75px 10px 73px;
+    border: 1px solid var(--color-medium-gray);
+    border-radius: 4px;    
+}
+
+.enrollment_input1 ::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-font);
+    padding: 13px 0 13px 22px; 
+}
+
+.enrollment_input2 input{
+    height: 50px;
+    width: 642px;  
+    margin: 10px 75px 20px 73px;
+    border: 1px solid var(--color-medium-gray);
+    border-radius: 4px;         
+}
+
+.enrollment_input2 ::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-font);
+    padding: 13px 0 13px 22px;
+}
+
+.enrollment_label label{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-medium-gray);
+    margin: 0 0 8px 72px;
+   
+}
+
+.enrollment_raio1 {
+    display: block;
+    margin-right: auto;   
+}
+
+.enrollment_raio1 input{
+    width: 23px;
+    height: 23px;
+    color: var(--color-radio);
+    margin: 8px 7px 0 74px;
+    
+}
+
+.enrollment_raio1 label {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-medium-gray);
+    padding-top: 8px;    
+}
+
+.enrollment_checkbox{
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-self: center;
+}
+
+.enrollment_checkbox input{
+    width: 23px;
+    height: 23px;
+    color: var(--color-radio);
+    margin: 30px 9px 0 72px;
+}
+
+.enrollment_checkbox label{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-medium-gray);
+    margin-top: 30px;
+}
+
+.enrollment_button1{
+    width: 244px;
+    height: 67px;
+    background-color: var(--color-button);
+    border-radius: 8px;
+    border-color: transparent;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-white);
+    margin: 38px 52px 52px 125px;
+}
+
+.enrollment_button2{
+    width: 244px;
+    height: 67px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    border: 2px solid var(--color-button);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-button); 
+}
+
+.footer{
+    background-color: var(--color-footer);
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-white);
+    margin: 0;   
+}
+
+.footer_div{
+    display: flex;
+    align-items: center;    
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:105px;
+}
+
+.rights{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 151px 0 201px; 
+   
+}
+
+.pricacy{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 105px;
+}
+
+.pricacy p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;      
+    margin: 0;
+   
+}
+
+
+
+
+@media (max-width: 720px){
+    .list-tag li {
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+    }
+
+    .list-tag{
+        padding: 0;
+        visibility: hidden;
+        white-space: pre;
+    }
+    
+    .nave{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nave h1{
+        color: var(--color-white);
+        font-size: 18px;
+        margin-left: 10px;   
+    }
+
+    .nav-list{
+        display: flex;    
+        margin-right: 10px;
+    }
+
+    #nave img{
+        height: 62px;
+        width: 62px;
+        display: flex;   
+    }
+
+    #news h2{
+        font-weight: 700;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0 0 0;
+    }
+
+    .news-text{
+        background-color: var(--color-light-gray);
+        margin: 8px 10px 0 10px;
+        border-radius: 8px;
+    }
+    .news-text h3{
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--color-green);
+        display: flex;
+        padding: 16px 13px 0 12px;
+    }
+
+    .text-one{
+        font-weight: 700;
+        font-size: 12px;
+        color: var(--color-medium-gray);
+        padding: 3px 12.15px 0 13px;
+        flex-wrap: wrap;
+    }
+
+    .line-decoratrion{
+        border-top: 1px solid var(--color-green);
+        margin: 3px 11.24px 1px 13px;
+
+    }
+
+    .news-date{   
+        font-weight: 400; 
+         font-size: 10px;
+         margin: 0;
+         color: var(--color-green);    
+        padding: 0 11.24px 0 13px;
+    }
+
+    .text-two {
+        font-weight: 400;
+        font-size: 10px;
+        color: var(--color-medium-gray);
+        padding: 12px 12px 0 12px;
+        flex-wrap: wrap;
+    }
+
+    .text-article {
+        font-weight: 700;
+        font-size: 14px;
+        margin: 0;
+        padding: 0 16px 12px 12px;
+        color: var(--color-button);
+        flex-wrap: wrap;
+    }
+
+    .text-Three {
+        font-weight: 400;
+        font-size: 10px;
+        color: var(--color-medium-gray);
+        padding: 12px;
+    }
+
+    .new-position-button {
+        margin-top: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game_imagem_selection{
+        justify-content: center;
+        display: flex; 
+        flex-direction: column;
+       /* flex-wrap: wrap; /*quebra de linha para a largura */     
+       
+    }
+
+    #game_imagem h2{ 
+        margin: 0;
+        font-weight: 700;   
+        font-size: 1.5rem;
+        color: var(--color-green);
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        padding: 40px 0 28px 0;
+    }
+
+        
+   .game_imagem_frame{
+        width: 300px;
+        height: 326px;
+        background-color: var(--color-white);
+        margin: 0 15px 27px 15px;
+        border-radius: 8px;
+        cursor: pointer; /* a seta do mouse passa para mao */
+    
+    }
+
+    #enrollment h2{
+        font-weight: 700;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin: 40px 0 0 0;
+    }
+
+    .enrollment_box{  
+        height: 603px ;
+        width: 300px;
+        background-color: var(--color-light-gray);
+        margin: 16px 10px 40px 10px;
+        border-radius: 8px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+           
+    }
+
+    .enrollment_input1 input{
+        height: 50px;
+        width: 280px;
+        margin: 52px 12px 10px 8px;
+        border: 1px solid var(--color-medium-gray);
+        border-radius: 4px;        
+    }
+
+    .enrollment_input2 input{
+        height: 50px;
+        max-width: 280px;
+        margin: 10px 12px 20px 8px;
+        border: 1px solid var(--color-medium-gray);
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;        
+    }
+    
+    .enrollment_label label{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-medium-gray);
+    margin: 0 0 8px 8px;   
+    }
+
+    .enrollment_raio1 {
+        display: flex;
+        align-self: center;   
+    }
+   
+    .enrollment_raio1 input{
+        width: 23px;
+        height: 23px;
+        color: var(--color-radio);
+        margin: 8px 7px 0 10px;        
+    }   
+
+    .enrollment_raio1 label {
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--color-medium-gray);
+        padding: 8px 238px 0 0;   
+    }
+    
+    .enrollment_checkbox input{
+        margin: 36px 9px 0 8px;
+    }
+    
+    .enrollment_checkbox label{
+        margin-top: 35px;
+    }
+   
+    .enrollment_button1{       
+        margin: 48px 30px 20px 26px;
+    }
+     
+    .enrollment_button2{
+        margin: 0 30px 33px 26px;     
+    }
+
+
+    .footer{
+        background-color: var(--color-footer);
+        height: 320px;
+        display: flex;
+       flex-direction: column;
+        /*justify-content: center;*/
+         
+    }
+
+    .footer_div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+     
+        
+    }
+
+    .link{        
+        margin: 0;
+    }
+
+    .rights{
+        display: flex;
+        align-items: center;    
+        flex-wrap: wrap; 
+        padding: 37.32px 74.25px 37px 83.23px;   
+     }
+
+    .pricacy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+      
+}
+
+@media (max-width: 320px){         
+   .game_imagem_frame{
+        width: 270px;
+        height: 326px;
+        background-color: var(--color-white);
+        margin: 0 10px 27px 10px;
+        border-radius: 8px;
+        cursor: pointer; /* a seta do mouse passa para mao */
+    
+    }
+
+    .game_imagem_frame img{
+        width: 270px;
+        height: 168.54px;
+        border-radius: 8px;   
+    
+    }
+
+    .footer_div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+               
+    }
+
+    .link{        
+        margin-top: 28px;
+    }
+
+    .rights{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 37.32px 0px 37px 14px;      
+     }
+
+     .pricacy{     
+        padding: 0 ;
+    }
+
+    .pricacy p{       
+        padding: 0 ;
+    }
+
+   
+    
+}
+
+
+
